@@ -1,0 +1,4 @@
+--print("jjjj")
+
+num = 100
+print(num)

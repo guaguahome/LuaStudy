@@ -1,0 +1,74 @@
+--print("jjjj")
+
+--local num = 100
+--print(num)
+
+
+function sayHi()
+	print("Hi Lua")
+end
+
+sayHi()
+
+
+function max(a,b)
+	if a >b then
+		return a
+	else
+		return b
+	end
+end
+
+print(max(111,333))
+
+for var=1, 100 do
+	print(var)
+end
+
+
+function jiec(n)		--阶乘
+	if n== 0 then
+		return 1
+	else
+		return n*jiec(n-1)
+	end
+end
+
+print(jiec(11))
+
+--闭包函数
+function closeFun(t)
+	local i=0;
+	local n = table.getn(t)
+	return function()
+		i=i+1
+		if i<=n then return t[i] end
+	
+	end
+
+end
+
+tt = {11,22,33}
+
+iter = closeFun(tt)
+--while true do
+--	local ele = iter()
+--	if ele == nil then break end
+--	print(ele)
+--
+--end
+print(iter())
+print(iter())
+
+
+
+
+
+
+
+
+
+
+
+
+

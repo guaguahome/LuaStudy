@@ -1,0 +1,12 @@
+--print("jjjj")
+
+--local num = 100
+--print(num)
+
+
+function sayHi()
+	print("Hi Lua")
+end
+
+sayHi()
+

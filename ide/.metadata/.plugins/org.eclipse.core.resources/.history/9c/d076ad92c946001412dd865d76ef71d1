@@ -1,0 +1,37 @@
+--print("jjjj")
+
+--local num = 100
+--print(num)
+
+
+function sayHi()
+	print("Hi Lua")
+end
+
+sayHi()
+
+
+function max(a,b)
+	if a >b then
+		return a
+	else
+		return b
+	end
+end
+
+print(max(111,333))
+
+for var=1, 100 do
+	print(var)
+end
+
+
+function jiec(n)
+	if n== 0 then
+		return 1
+	else
+		return n*jiec(n-1)
+	end
+end
+
+print(jiec(5))
